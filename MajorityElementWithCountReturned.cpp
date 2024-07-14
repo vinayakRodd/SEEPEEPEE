@@ -29,6 +29,8 @@ int majorityElement(vector<int> v) {
 				if(count1 > v.size()/2)
 					return ele;
         }
+
+	return -1; // If element does not exists //
 }
 
 // I have returned the element itself but still if the problem statement states to return the count then that can also be done in this solution..//
