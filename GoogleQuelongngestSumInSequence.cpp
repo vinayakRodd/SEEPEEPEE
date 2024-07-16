@@ -1,5 +1,7 @@
 int longestSuccessiveElements(vector<int>&a) {
-    
+    if(a.size() == 0)
+        return 0;
+            
     sort(a.begin(),a.end());
 
     int longest = 1;
