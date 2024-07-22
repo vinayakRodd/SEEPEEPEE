@@ -4,18 +4,18 @@ public:
         
     sort(a.begin(),a.end());
     
-    vector<vector<int>> v;
+    vector<vector<int>> v;            
 
     int k,l;
 
     for(int i=0; i<a.size(); i++){
 
-        if(i>0 && a[i] == a[i-1])
+        if(i>0 && a[i] == a[i-1])            // check the prev and the current element are same then skip the next steps //
             continue;
 
         for(int j=i+1; j<a.size(); j++){
 
-            if(a[j] == a[j-1] && j != i+1)
+            if(a[j] == a[j-1] && j != i+1)        // here i and j indexes, if they arent same then 
               continue;
 
             
@@ -24,7 +24,7 @@ public:
 
             while(k<l){
 
-                long long sum = a[i];
+                long long sum = a[i];            // To avoid large values //
 
                 sum += a[j];
                 sum += a[k];
@@ -39,9 +39,9 @@ public:
                   k++;
                   l--;
 
-                  while (k < l && a[k] == a[k-1])
+                  while (k < l && a[k] == a[k-1])            // moving the pointer to the element which is not same as the prev, moving to the right //
                     k++;
-                  while (k < l && a[l] == a[l+1] )
+                  while (k < l && a[l] == a[l+1] )            // moving the pointer to the element which is not same as the prev moving to the left //
                     l--;
                 }
 
