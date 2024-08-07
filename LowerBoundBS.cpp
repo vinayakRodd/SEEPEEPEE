@@ -23,3 +23,5 @@ int lowerBound(vector<int> arr, int n, int x) {
 
 
 }
+
+// Upper Bound is the lowest index at which the element is  greater than equal to x..
