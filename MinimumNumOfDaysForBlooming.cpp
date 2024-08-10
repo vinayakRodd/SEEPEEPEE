@@ -59,7 +59,7 @@ public:
 
         
 
-        long long low = minEle(bloomDay),high = 2*maxEle(bloomDay);
+        long long low = minEle(bloomDay),high = maxEle(bloomDay);
         
         long long ans;
         while(low <= high){
