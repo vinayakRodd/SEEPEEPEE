@@ -19,7 +19,7 @@ public:
         while(low<=high){
             int mid=(low+ high)/2;
             int row= maxElement(mat, m, mid);
-            int left = mid-1>=0 ? mat[row][mid-1] : -1;
+            int left = mid-1>=0 ? mat[row][mid-1] : -1;        // here why -1 because what is the first element itself is the peak or the elements in the last and the first row do not have top or bottom elements so inroder to get the peak element this condition is added here //
             int right = mid+1<n ? mat[row][mid+1] : -1;
             if ( mat[row][mid] > left && mat[row][mid]> right){
                 return {row, mid};
